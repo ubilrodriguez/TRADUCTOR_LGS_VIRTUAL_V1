@@ -1,8 +1,9 @@
 const path = require("path");
 const { defineConfig } = require("vite");
-import Banner from "vite-plugin-banner";
-import pkg from "./package.json";
-import friendlyTypeImports from "rollup-plugin-friendly-type-imports";
+const Banner = require("vite-plugin-banner");
+const pkg = require("./package.json");
+const friendlyTypeImports = require("rollup-plugin-friendly-type-imports");
+
 module.exports = defineConfig({
     base: "./",
     build: {
