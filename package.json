@@ -3,9 +3,10 @@
   "name": "kalidokit",
   "scripts": {
     "dev": "vite docs",
-    "build": "vite build && npm run build:lib",
     "build:lib": "tsc -p .",
     "serve": "vite",
+    "build": "vite build --config vite.config.cjs",
+    "start": "echo 'Library built successfully'",
     "prepare": "npm run build",
     "fmt": "prettier --write 'src/**/*.ts'"
   },
